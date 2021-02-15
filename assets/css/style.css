@@ -1,0 +1,46 @@
+body {
+    margin-top: 50px;
+    background-color: #202020;
+}
+
+h1 {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+button#start,
+button#restart {
+    border: 2px solid #009DD2;
+    background-color: #202020;
+    color: #009DD2;
+    font-size: 20px;
+    outline: none;
+}
+
+button#start:hover,
+button#restart:hover {
+    border: 2px solid #1CC6FF;
+    color: #1CC6FF;
+    border-radius: 5px;
+}
+
+.play-button {
+    border: 2px solid #fff;
+    background-color: #202020;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 1px;
+}
+
+.play-button:hover {
+    border: 2px solid #1CC6FF;
+    color: #1CC6FF;
+    border-radius: 5px;
+}
+
+.play-button:focus {
+    outline: none;
+}
