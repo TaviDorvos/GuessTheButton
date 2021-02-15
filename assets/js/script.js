@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function startGame() {
         var btnNumber = document.getElementById("btn-number").value;
-        var winButton = "";
 
         if (btnNumber > 0 && btnNumber != "") {
             document.getElementById("start").classList.add("d-none");
 
             //Win button value
-            winButton = Math.floor(Math.random() * btnNumber);
+            var winButton = Math.floor(Math.random() * btnNumber);
             //console.log(winButton);
 
             //Creating the buttons
+            //Adding classes, ids and functions to those buttons
             for (var i = 0; i < btnNumber; i++) {
                 var button = document.createElement('button');
                 button.innerHTML = "Is this one?";
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
         } else {
-            alert("Introdu un numar mai mare decat 0.")
+            alert("Insert a number bigger than 0.")
         }
     }
 
